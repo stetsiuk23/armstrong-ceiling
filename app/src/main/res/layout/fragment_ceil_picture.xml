@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frag"
+    android:scaleX="0.97"
+    android:scaleY="0.97"
+    android:orientation="vertical"
+    tools:context=".CeilPicture">
+
+    <ScrollView
+        android:id="@+id/scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/myBkgr"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linLForInfo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="13dp"
+                android:text="Направляючий"
+                android:id="@+id/cred">
+            </TextView>
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Профіль 120"
+                android:id="@+id/cblue">
+            </TextView>
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Профіль 60"
+                android:id="@+id/cgreen">
+            </TextView>
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пристінний"
+                android:id="@+id/cgray">
+            </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/myBkgr"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linLForCanvas">
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
